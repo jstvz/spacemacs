@@ -157,7 +157,7 @@ Will work on both org-mode and any mode that accepts plain html."
 
       (dolist (prefix '(
                         ("mb" . "babel")
-                        ("mC" . "clocks")
+                        ("mc" . "clocks")
                         ("md" . "dates")
                         ("me" . "export")
                         ("mf" . "feeds")
@@ -174,11 +174,11 @@ Will work on both org-mode and any mode that accepts plain html."
         (spacemacs/declare-prefix-for-mode 'org-mode (car prefix) (cdr prefix)))
       (spacemacs/set-leader-keys-for-major-mode 'org-mode
         "'" 'org-edit-special
-        "c" 'org-capture
-        "Cc" 'org-clock-cancel
-        "Ci" 'org-clock-in
-        "Co" 'org-clock-out
-        "Cr" 'org-resolve-clocks
+        "C" 'org-capture
+        "cc" 'org-clock-cancel
+        "ci" 'org-clock-in
+        "co" 'org-clock-out
+        "cr" 'org-resolve-clocks
         "dd" 'org-deadline
         "ds" 'org-schedule
         "dt" 'org-time-stamp
@@ -192,6 +192,7 @@ Will work on both org-mode and any mode that accepts plain html."
         "Tc" 'org-toggle-checkbox
         "Te" 'org-toggle-pretty-entities
         "Ti" 'org-toggle-inline-images
+        "TI" 'org-toggle-inline-images
         "Tl" 'org-toggle-link-display
         "Tt" 'org-show-todo-tree
         "TT" 'org-todo
@@ -566,7 +567,7 @@ Headline^^            Visit entry^^               Filter^^                    Da
       (when (spacemacs/system-is-mac)
         (setq org-pomodoro-audio-player "/usr/bin/afplay"))
       (spacemacs/set-leader-keys-for-major-mode 'org-mode
-        "Cp" 'org-pomodoro)
+        "cp" 'org-pomodoro)
       (spacemacs/set-leader-keys-for-major-mode 'org-agenda-mode
         "Cp" 'org-pomodoro))))
 

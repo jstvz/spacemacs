@@ -487,6 +487,7 @@ respond to this toggle."
 (spacemacs/set-leader-keys
   "xa%" 'spacemacs/align-repeat-percent
   "xa&" 'spacemacs/align-repeat-ampersand
+  "xa'" 'spacemacs/align-repeat-apostrophe
   "xa(" 'spacemacs/align-repeat-left-paren
   "xa)" 'spacemacs/align-repeat-right-paren
   "xa{" 'spacemacs/align-repeat-left-curly-brace

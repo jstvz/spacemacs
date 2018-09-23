@@ -1059,6 +1059,7 @@ the right."
 (spacemacs|create-align-repeat-x "semicolon" ";" nil t)
 (spacemacs|create-align-repeat-x "colon" ":" nil t)
 (spacemacs|create-align-repeat-x "equal" "=")
+(spacemacs|create-align-repeat-x "apostrophe" "'")
 (spacemacs|create-align-repeat-x "math-oper" "[+\\-*/]")
 (spacemacs|create-align-repeat-x "percent" "%")
 (spacemacs|create-align-repeat-x "ampersand" "&")
